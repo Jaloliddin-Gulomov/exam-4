@@ -5,7 +5,7 @@ logOut.addEventListener("click", () => {
     const isAgreeToOut = confirm("Haqiqatdan ham chiqib ketmoqchimisiz?");
     if(isAgreeToOut){
         localStorage.removeItem("token")
-        window.location.href = "https://monumental-biscotti-2ad179.netlify.app/index.html"
+        window.location.href = "https://elegant-paprenjak-e3c3f1.netlify.app/index.html"
     }
     
 })

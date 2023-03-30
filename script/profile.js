@@ -59,12 +59,12 @@ loginForm.addEventListener("submit", (e) => {
                 if(data.token) {
                     localStorage.setItem("token", data.token)
                     if(localStorage.getItem("token")){
-                        window.location.href = "https://monumental-biscotti-2ad179.netlify.app/profile.html"
+                        window.location.href = "https://elegant-paprenjak-e3c3f1.netlify.app/profile.html"
                     }
                 }
             })
 })
 
 if(localStorage.getItem("token")){
-    window.location.href = "https://monumental-biscotti-2ad179.netlify.app/profile.html"
+    window.location.href = "https://elegant-paprenjak-e3c3f1.netlify.app/profile.html"
 }
