@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Roboto&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Philosopher";
+}
+
+nav{
+  background-color: #150C01;
+  padding: 1rem 0;
+  margin-bottom: 5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+
+li{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.big_card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.card {
+  max-width: 360px;
+  height: 446px;
+  background: #FFFFFF;
+  border: 1px solid #0000001a;
+  border-radius: 75px 10px 10px 10px;
+  box-sizing: border-box;
+  .image{
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+  }
+}
+
+.card_control {
+  margin: 0px 25px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 24px;
+  color: #150C01;
+  margin-top: 7px;
+}
+
+strong{
+  font-size: 14px;
+}
+
+.card_small_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #150C01;
+  opacity: 0.7;
+  margin: 20px 0px;
+}
+
+.card_box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  img{
+    max-width: 15px;
+  }
+}
+
+.box {
+  width: 36px;
+  height: 34px;
+  background: red;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  i{
+    pointer-events: none;
+  }
+ 
+}
+.box:hover{
+  background-color: #ff00009d;
+}
+.reg-form{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  input{
+    padding: 5px;
+  }
+  button{
+    background-color: #44d844;
+    color: #FFFFFF;
+    border: 1px solid #44d844;
+    padding: 5px;
+  }
+  button:hover{
+    background-color: #44d844c7;
+  }
+}
+.form-wrap{
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  h2{
+    text-align: center;
+  }
+}
+.login-form{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  input{
+    padding: 5px;
+  }
+  button{
+    padding: 5px;
+    background-color: #222;
+    color: #FFFFFF;
+    border: 1px solid #222222de;
+  }
+  button:hover{
+    background-color: #222222de;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .big_card{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media only screen  and (max-width: 375px){
+  .big_card{
+    grid-template-columns: 1fr;
+  }
+}
